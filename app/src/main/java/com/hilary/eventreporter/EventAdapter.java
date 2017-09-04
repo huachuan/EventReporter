@@ -30,6 +30,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeSet;
 
+import static android.R.attr.bitmap;
 import static com.hilary.eventreporter.R.drawable.event;
 import static com.hilary.eventreporter.R.id.adView;
 
@@ -186,6 +187,11 @@ public class EventAdapter extends BaseAdapter {
                 holder.imgview.setVisibility(View.VISIBLE);
                 new AsyncTask<Void, Void, Bitmap>() {
                     @Override
+                    protected void onPreExecute() {
+                        holder.imgview.setImageBitmap(null);
+                        holder.imgview.setVisibility(View.VISIBLE);
+                    }
+                        @Override
                     protected Bitmap doInBackground(Void... params) {
                         return Utilities.getBitmapFromURL(url);
                     }
@@ -195,8 +201,11 @@ public class EventAdapter extends BaseAdapter {
                         holder.imgview.setImageBitmap(bitmap);
                     }
                 }.execute();
-            }
-            holder.good_number.setText(String.valueOf(event.getGood()));
+            }else {
+                    holder.imgview.setVisibility(View.GONE);
+                }
+
+                holder.good_number.setText(String.valueOf(event.getGood()));
             holder.repost_number.setText(String.valueOf(event.getRepost()));
             holder.comment_number.setText(String.valueOf(event.getCommendNumber()));
 
