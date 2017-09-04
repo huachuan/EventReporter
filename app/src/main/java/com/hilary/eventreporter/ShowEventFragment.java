@@ -55,6 +55,7 @@ public class ShowEventFragment extends Fragment {
                     events.add(event);
                 }
                 eventAdapter = new EventAdapter(getContext(), events);
+                eventAdapter.setUserName(((EventActivity)getActivity()).getUsername());
                 listView.setAdapter(eventAdapter);
             }
             @Override
