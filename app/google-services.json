@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1049934357240",
+    "firebase_url": "https://eventreporter-39912.firebaseio.com",
+    "project_id": "eventreporter-39912",
+    "storage_bucket": "eventreporter-39912.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049934357240:android:e35783dfb9bf2056",
+        "android_client_info": {
+          "package_name": "com.hilary.eventreporter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049934357240-vf4p56e6mpf9f4dcos3hf29o6amkmh5l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hilary.eventreporter",
+            "certificate_hash": "7277db330a45006b4bddfe59ea2f5c68ffd330f2"
+          }
+        },
+        {
+          "client_id": "1049934357240-l87ab2p04o3h33pqf1c6shflog5d447a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7ZaJUcWn0g1EIZmV7wJvNZdtlCb5olbY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049934357240-l87ab2p04o3h33pqf1c6shflog5d447a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
